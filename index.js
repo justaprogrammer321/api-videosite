@@ -1,6 +1,10 @@
 // index.js
 const express = require('express');
 const app = express();
+const cors=require('cors')
+
+app.use(cors());
+
 const PORT = process.env.PORT || 3000; // Choose a suitable port
 
 // Define an array of video URLs
